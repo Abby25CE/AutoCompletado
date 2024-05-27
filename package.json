@@ -13,7 +13,7 @@
     "algoliasearch": "^4.23.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-instantsearch-hooks": "^6.47.3"
+    "react-instantsearch-core": "^7.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
