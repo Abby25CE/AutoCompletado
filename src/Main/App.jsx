@@ -1,4 +1,4 @@
-import TextThink from "./Containers/TextThink";
+import TextThink from "../Containers/TextThink";
 
 function App() {
   return (
