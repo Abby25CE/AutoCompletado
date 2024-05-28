@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 npm install algoliasearch react-instantsearch-hooks
 
 npm install react-instantsearch-core
+
+npm install algoliasearch react-instantsearch-hooks-web
