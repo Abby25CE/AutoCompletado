@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 export const Item = ({ hit }) => {
+  console.log("Errores");
   return (
     <div>
       <div>
