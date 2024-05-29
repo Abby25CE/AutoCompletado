@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import algoliasearch from "algoliasearch/lite";
-import { InstantSearch } from "react-instantsearch-core";
+import { InstantSearch } from "react-instantsearch";
 
 // Configuración correcta del cliente de búsqueda
 const searchClient = algoliasearch(

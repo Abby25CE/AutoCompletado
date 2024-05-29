@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import YoAsset from "../assets/Yo.jpeg";
 import getActiveToken from "../Utils/GetToken.js";
-import { useSearchBox } from "react-instantsearch-core";
+import { useSearchBox } from "react-instantsearch";
 import Autocomplete from "./Autocomplete.jsx";
 
 export const ThextThink = () => {

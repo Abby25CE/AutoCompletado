@@ -1,7 +1,8 @@
-import { useHits } from "react-instantsearch-core";
+import { useHits } from "react-instantsearch";
 //import { Item } from "../Utils/Item";
 
-export const Autocomplete = (handleSelection) => {
+// eslint-disable-next-line react/prop-types
+export const Autocomplete = ({ handleSelection = () => {} }) => {
   const { Hits } = useHits();
   console.log("Autocomplete Inicio");
 
