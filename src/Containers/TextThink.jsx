@@ -8,13 +8,16 @@ export const ThextThink = () => {
   const inputRef = useRef();
   const [showAutocomplete, setShowAutocomplete] = useState(false);
   const { search } = useSearchBox();
+  console.log("TextThink");
 
   const handleInput = () => {
     const { value, selectionEnd = 0 } = inputRef.current;
+
     const { word } = getActiveToken(value, selectionEnd);
     const shoulOpenAutocomplete = /^@\w{1,15}$/.test(word);
     setShowAutocomplete(shoulOpenAutocomplete);
     shoulOpenAutocomplete && search(word.slice(1));
+    console.log("HandleInput");
   };
 
   return (
@@ -43,7 +46,12 @@ export const ThextThink = () => {
                 />
               </form>
 
-              {showAutocomplete && <Autocomplete />}
+              {showAutocomplete && (
+                <>
+                  {console.log("Autocomplete llamada")}
+                  <Autocomplete />
+                </>
+              )}
             </div>
           </div>
           <hr className=" border-slate-300 w-[30rem]" />

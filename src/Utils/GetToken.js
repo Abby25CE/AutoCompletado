@@ -1,4 +1,5 @@
 export function getActiveToken(input, cursorPosition) {
+
     // recuperamos la posición actual del cursor
     if (cursorPosition === undefined) return undefined;
     // creamos un array temporal para guardar las palabras
@@ -18,7 +19,9 @@ export function getActiveToken(input, cursorPosition) {
 
     // buscamos en qué palabra estamos dependiendo de la posición del cursor
     return words.find(
+
         ({ range }) => range[0] <= cursorPosition && range[1] >= cursorPosition
+
     );
 }
 

@@ -3,16 +3,26 @@ import { useHits } from "react-instantsearch-core";
 
 export const Autocomplete = (handleSelection) => {
   const { Hits } = useHits();
-  console.log("Hola");
+  console.log("Autocomplete Inicio");
 
   return (
     <div>
+      <>{console.log("Autocomplete ")}</>
       {Hits.length > 0 && (
         <ul>
+          <>
+            {console.log("Autocomplete validacion de que hits es mayor que 0")}
+          </>
           {Hits.map((hit) => (
             <li key={hit.nikname || hit.objectID}>
+              <>{console.log("se mapea Hits")}</>
               <button onClick={() => handleSelection(hit.nikname)}>
-                <Item hit={hit} />
+                {
+                  <>
+                    {console.log("Llamada a item")}
+                    <Item hit={hit} />
+                  </>
+                }
               </button>
             </li>
           ))}
@@ -25,7 +35,7 @@ export default Autocomplete;
 
 /* eslint-disable react/prop-types */
 const Item = ({ hit }) => {
-  console.log("Errores");
+  console.log("Item");
   return (
     <div>
       <div>
